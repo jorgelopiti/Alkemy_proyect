@@ -1,17 +1,12 @@
-package com.alkemy.icons.icons.entity;
+package com.alkemy.icons.icons.dto;
+
 
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
-
-@Entity
-@Table( name = "character")
-@Getter
 @Setter
-public class Character {
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+@Getter
+public class CharacterDto {
     private Long id;
     private String name;
     private String image;
@@ -19,5 +14,4 @@ public class Character {
     private double weight;
     private String history;
     private String movie_serie;
-
 }
